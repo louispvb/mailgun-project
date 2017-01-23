@@ -1,4 +1,4 @@
-(ns mailgun-project.core
+(ns mailgun-project.mailtool.core
   (:require [clj-http.client :as client]
             [clojure.data.json :as json]
             [clojure.tools.cli :refer [parse-opts]])
