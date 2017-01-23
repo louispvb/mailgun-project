@@ -7,7 +7,11 @@
                  [clj-http "3.4.1"]
                  [org.clojure/data.json "0.2.6"]
                  [org.clojure/tools.cli "0.3.5"]
-                 [de.ubercode.clostache/clostache "1.4.0"]]
+                 [de.ubercode.clostache/clostache "1.4.0"]
+                 [ring "1.5.1"]
+                 [ring/ring-json "0.4.0"]
+                 [ring-basic-authentication "1.0.5"]
+                 [compojure "1.5.2"]]
   :profiles {:mailtool {:main mailgun-project.mailtool.core
                         :uberjar-name "mailtool.jar"}}
   :aot [mailgun-project.mailtool.core])
