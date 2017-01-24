@@ -25,6 +25,7 @@
         <h1>Welcome to {{company}}, {{user}}.</h1>
         <h3>We built an awesome product. A great product. The best.</h3>
         <a href=\"{{link}}\">Get started now.</a>
+        <p>Email count {{count}}</p>
       </body>
     </html>"})
 

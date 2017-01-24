@@ -8,10 +8,15 @@
                  [org.clojure/data.json "0.2.6"]
                  [org.clojure/tools.cli "0.3.5"]
                  [de.ubercode.clostache/clostache "1.4.0"]
+                 [clj-pid "0.1.2"]
                  [ring "1.5.1"]
                  [ring/ring-json "0.4.0"]
                  [ring-basic-authentication "1.0.5"]
-                 [compojure "1.5.2"]]
+                 [compojure "1.5.2"]
+                 [com.novemberain/langohr "3.6.1"]]
   :profiles {:mailtool {:main mailgun-project.mailtool.core
-                        :uberjar-name "mailtool.jar"}}
-  :aot [mailgun-project.mailtool.core])
+                        :uberjar-name "mailtool.jar"}
+             :outbox {:main mailgun-project.outbox.core
+                     :uberjar-name "outbox.jar"}}
+  :aot [mailgun-project.mailtool.core mailgun-project.outbox.core]
+  :auto-clean false)
